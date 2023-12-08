@@ -1,10 +1,9 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
 
 export default function VanDetail() {
   const params = useParams();
-
+  console.log("kundy", params);
   const [van, setVan] = React.useState(null);
 
   React.useEffect(() => {

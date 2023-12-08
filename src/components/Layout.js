@@ -1,3 +1,11 @@
-export default function Laout() {
-  return <p>Kokc</p>;
+import { Outlet } from "react-router-dom";
+import Header from "./Header";
+
+export default function Layout() {
+  return (
+    <>
+      <Header />
+      <Outlet />
+    </>
+  );
 }
